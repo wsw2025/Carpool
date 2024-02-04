@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- button_background_with_border.xml -->
+    <shape xmlns:android="http://schemas.android.com/apk/res/android" tools:ignore="ExtraText">
+        <solid android:color="#8A0000" /> <!-- Set your desired background color -->
+        <corners android:radius="8dp" />
+        <stroke
+            android:color="#FFFFFF"
+        android:width="1dp" /> <!-- Set your desired border width -->
+    </shape>
+</selector>

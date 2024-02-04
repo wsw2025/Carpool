@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="20dp"
+    android:paddingRight="30dp">
+
+    <!-- Vehicle Type -->
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:onClick="Back"
+        android:text="x" />
+
+    <TextView
+        android:id="@+id/AddVehicleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/cairo_bold"
+        android:gravity="center_horizontal"
+        android:text="Vehicle Information"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:layout_width="342dp"
+        android:layout_height="460dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Vehicle Type -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vehicle_type"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/vehicle_type_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="20dp"
+                android:entries="@array/vehicle_types" />
+
+            <!-- Model -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/modelEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+            <!-- Price per Person -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_per_person"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/price_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:inputType="numberDecimal" />
+
+            <!-- Seating Capacity -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seating Capacity"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/capacity_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:inputType="numberDecimal" />
+
+            <!-- Pickup Time -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pickup_time"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/pickup_time_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="20dp"
+                android:entries="@array/pickup_times" />
+
+            <!-- Pickup Address -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pickup_address"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/addressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/AddVehicle"
+        android:layout_width="313dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:onClick="addVehicle"
+        android:text="Add Vehicle"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:backgroundTint="#6A8BE8"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#6A8BE8"
+        app:strokeWidth="4dp" />
+
+</LinearLayout>
