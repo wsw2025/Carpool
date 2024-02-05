@@ -19,6 +19,11 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FieldValue;
 
+/**
+ * When user clicks on a specific vehicle in VehiclesInfoActivity, redirects to this page with all its details
+ * User is also able to book the vehicle here.
+ */
+
 public class VehicleProfileActivity extends AppCompatActivity {
     private FirebaseFirestore firestore;
     private String documentId;

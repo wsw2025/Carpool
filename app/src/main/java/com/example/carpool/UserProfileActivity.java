@@ -15,6 +15,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+/**
+ * displays user info
+ */
+
 public class UserProfileActivity extends AppCompatActivity {
 
     private FirebaseFirestore firestore;

@@ -27,6 +27,10 @@ import androidx.navigation.ui.NavigationUI;
 import java.util.Objects;
 import java.util.UUID;
 
+/**
+ * User fills in fields here to add a new vehicle.
+ */
+
 
 public class AddVehicleActivity extends AppCompatActivity {
 

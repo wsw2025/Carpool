@@ -30,6 +30,11 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
+/**
+ * This is the main page, the user is directed here from signing in or signing up
+ * , or when clicking back from other pages
+ */
+
 public class MainActivity extends AppCompatActivity {
     private ArrayList<String> vehicleInfoList = new ArrayList<>();
     private ArrayAdapter<String> vehicleAdapter;

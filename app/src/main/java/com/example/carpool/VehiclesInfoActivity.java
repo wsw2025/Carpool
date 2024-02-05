@@ -25,6 +25,10 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
+/**
+ * Display all vehicles/filtered vehicles. Can click into one of them to redirect to VehicleProfileActivity
+ */
+
 public class VehiclesInfoActivity extends AppCompatActivity {
     private ArrayList<String> vehicleIDList = new ArrayList<>();
     private ArrayAdapter<String> vehicleAdapter;
